@@ -62,5 +62,13 @@ a {
 }
 
 .header__nav {
+    display: inline-block;
+}
 
+.header__nav ul {
+    
+}
+
+.header__nav ul li {
+    display: inline-block;
 }
