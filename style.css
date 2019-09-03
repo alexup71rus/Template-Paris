@@ -23,11 +23,12 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: 'Montserrat Regular'
+   font-family: 'Montserrat Regular';
+   font-size: 16px;
 }
 
-html, body {
-
+body {
+    background-color: #333;
 }
 
 a {
@@ -43,6 +44,14 @@ a {
 .container {
     max-width: 1110px;
     margin: 0 auto;
+}
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 30px;
 }
 
 .header__left {
@@ -66,9 +75,37 @@ a {
 }
 
 .header__nav ul {
-    
+    list-style-type: none;
+    margin-left: 10px;
 }
 
 .header__nav ul li {
     display: inline-block;
+    margin: 0 12px;
+}
+
+.header__nav ul li a {
+    color: #fff;
+}
+
+.header__login {
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 3px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: 0 0 0 1px #fff;
+}
+
+
+/* first block */
+
+.first {
+    background-image: url(img/first-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
